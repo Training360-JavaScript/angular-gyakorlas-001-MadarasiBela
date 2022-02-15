@@ -16,9 +16,19 @@ export class PricingPageComponent implements OnInit {
 
   priceTable: IPriceItem[] = [];
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
-  }
+    this.priceTable = [
+      {
+        name: 'Free',
+        price: 0,
+        options: ['10 Tanulo','2 GB Tárhely','Email támogatás','Dokumentáció'],
+        btnText: 'Ingyyenes regisztráció',
+      },
+
+       ]
+    }
 
 }
